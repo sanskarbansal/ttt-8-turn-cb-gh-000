@@ -1,13 +1,12 @@
 def turn(board)
-  loop do
-    puts "Please enter 1-9:"
-    number = gets.strip
-    pos = input_to_index(number)
-    flag = valid_move?(board, pos)
-    if(flag == true)
-      move(board, pos)
-      break
-    end
+  puts "Please enter 1-9:"
+  number = gets.strip
+  pos = input_to_index(number)
+  flag = valid_move?(board, pos)
+  if(flag == true)
+    move(board, pos)
+  else 
+    turn(board)
   end
 end
 
