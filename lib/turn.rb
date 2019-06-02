@@ -5,6 +5,7 @@ def display_board(board)
   puts "-----------"
   puts " board[6] | board[7] | board[8]"
 end
+
 def valid_move?(board, index)
   if(index >=0 && index <= 8)
     if(board[index]=="" || board[index]==" " || board[index] == nil)
@@ -13,4 +14,3 @@ def valid_move?(board, index)
   end
   return false
 end
-  
