@@ -1,7 +1,7 @@
 def turn(board)
   puts "Please enter 1-9:"
   index = input_to_index(gets.strip)
-  flag = valid_move?(board, index)
+  flag = valid_move?(board, index, "X")
   if(flag == true)
     move(board, index)
     display_board(board)
@@ -21,7 +21,7 @@ end
 
 def valid_move?(board, index)
   if(index >=0 && index <= 8)
-    if(board[index]!="X" || board[index]!="O")
+    if(board[index]=="" || board[index]==" " || board[index] == nil)
       return true
     end
   end
