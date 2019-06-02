@@ -1,3 +1,6 @@
+def turn()
+end
+
 def display_board(board)
   puts " board[0] | board[1] | board[2]"
   puts "-----------"
@@ -22,4 +25,7 @@ end
 def move(board, pos, value="X")
   pos = input_to_index(pos)
   if(valid_move(pos)==true)
-    
+    board[pos]=value
+  end
+end
+
