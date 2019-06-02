@@ -16,5 +16,5 @@ def valid_move?(board, index)
 end
 
 def input_to_index(number)
-  return number.to_i
+  return number.to_i-1
 end
