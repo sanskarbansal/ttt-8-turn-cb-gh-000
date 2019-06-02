@@ -1,9 +1,9 @@
 def turn(board)
   puts "Please enter 1-9:"
   number = gets
-  number = input_to_index(number)
-  if(valid_move?(board, number) == true)
-    move(board, number)
+  pos = input_to_index(number)
+  if(valid_move?(board, pos) == true)
+    move(board, pos)
   else
     turn(board)
   end
