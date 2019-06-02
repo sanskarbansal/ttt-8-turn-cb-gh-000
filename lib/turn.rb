@@ -18,3 +18,8 @@ end
 def input_to_index(number)
   return number.to_i-1
 end
+
+def move(board, pos, value="X")
+  pos = input_to_index(pos)
+  if(valid_move(pos)==true)
+    
