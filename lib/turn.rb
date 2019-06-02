@@ -5,6 +5,7 @@ def turn(board)
   flag = valid_move?(board, pos)
   if(flag == true)
     move(board, pos)
+    return true
   else
     turn(board)
   end
