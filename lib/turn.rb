@@ -22,7 +22,6 @@ def input_to_index(number)
 end
 
 def move(board, pos, value="X")
-  pos = input_to_index(pos)
   if(valid_move(pos)==true)
     board[pos]=value
   end
