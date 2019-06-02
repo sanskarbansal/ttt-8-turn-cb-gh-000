@@ -5,6 +5,7 @@ def turn(board)
   if(valid_move?(board, number) == true)
     move(board, number)
   else
+    turn(board)
   end
 end
 
