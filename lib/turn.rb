@@ -28,4 +28,3 @@ def move(board, pos, value="X")
     board[pos]=value
   end
 end
-
