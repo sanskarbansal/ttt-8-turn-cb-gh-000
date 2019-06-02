@@ -6,8 +6,6 @@ def turn(board)
   if(flag == true)
     move(board, pos)
     #display_board(board)
-  else
-    turn(board)
   end
 end
 
