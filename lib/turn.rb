@@ -1,17 +1,19 @@
 def turn(board)
-  puts "Please enter 1-9:"
-  number = gets.strip
-  pos = input_to_index(number)
-  flag = valid_move?(board, pos)
-  if(flag == true)
-    move(board, pos)
-    #display_board(board)
+  loop do
+    puts "Please enter 1-9:"
+    number = gets.strip
+    pos = input_to_index(number)
+    flag = valid_move?(board, pos)
+    if(flag == true)
+      move(board, pos)
+      break
+    end
   end
 end
 
 
 def display_board(board)
-  puts " #{board[0]} | #{board[1]} | #{board[2]} "
+  puts " #{board[0]} | #{board[1]} | #{board[2]} " 
   puts "-----------"
   puts " #{board[3]} | #{board[4]} | #{board[5]} "
   puts "-----------"
